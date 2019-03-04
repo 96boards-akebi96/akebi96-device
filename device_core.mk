@@ -76,8 +76,7 @@ PRODUCT_PACKAGES_VSOC_OPENMAX := \
     libomxprox.sc1401aj1
 
 PRODUCT_PACKAGES_VSOC_COMPONENTS := \
-    libvoc \
-    libslc.sc1401aj1 \
+    libvideo-out \
     libsc.sc1401aj1 \
     libviorscmgr.sc1401aj1
 
