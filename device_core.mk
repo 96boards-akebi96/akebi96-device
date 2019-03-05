@@ -89,12 +89,7 @@ PRODUCT_PACKAGES_KMOD := \
     ave.ko \
     ion-uniphier-pxs2.ko \
     ion-uniphier.ko \
-    snd-soc-bd28623.ko \
     snd-soc-uniphier-aio2013.ko \
-    uniphier-thru-out.ko \
-    uniphier-thru-in.ko \
-    uniphier-thru-io.ko \
-    uniphier-evea.ko \
     uniphier-spdif_tx.ko \
     vocdrv-ld20.ko
 
