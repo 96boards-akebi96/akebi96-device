@@ -7,7 +7,7 @@ LOCAL_FSTAB_PATH ?= device/socionext/akebi96
 # # Select WiFi module
 BOARD_WLAN_DEVICE ?= rtl8822bu
 
-# default config is bsp-1.1 ("1.0" or "1.1" or "1.2")
+# default config is bsp-1.2
 BOARD_USE_BSP_VER ?= 1.2
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -77,8 +77,7 @@ PRODUCT_PACKAGES_VSOC_OPENMAX := \
 
 PRODUCT_PACKAGES_VSOC_COMPONENTS := \
     libvideo-out \
-    libsc.sc1401aj1 \
-    libviorscmgr.sc1401aj1
+    libsc.sc1401aj1
 
 PRODUCT_PACKAGES_KMOD := \
     snd-hwdep.ko \
@@ -101,7 +100,6 @@ PRODUCT_PACKAGES_OPENGL := \
     gralloc.sc1401aj1 \
     mali_kbase.ko
 
-    #libGLES_android \
 #
 # Config PRODUCT_PACKAGES
 #
