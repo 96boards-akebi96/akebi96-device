@@ -87,7 +87,6 @@ PRODUCT_PACKAGES_KMOD := \
     dwc3.ko \
     dwc3-uniphier.ko \
     ave.ko \
-    ion-uniphier-pxs2.ko \
     ion-uniphier.ko \
     snd-soc-uniphier-aio2013.ko \
     uniphier-spdif_tx.ko \
