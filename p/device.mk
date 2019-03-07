@@ -1,5 +1,3 @@
-#PRODUCT_PROPERTY_OVERRIDES += ro.config.low_ram=true
-#include frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk
 
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
@@ -57,11 +55,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl
 
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-service.sc1401aj1
-
-PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
-    android.hardware.audio@4.0-impl \
     android.hardware.audio@2.0-service \
     android.hardware.audio.effect@4.0-impl \
     android.hardware.broadcastradio@1.0-impl \
@@ -72,13 +66,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libpuresoftkeymasterdevice \
     android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service \
-    android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service \
-    android.hardware.drm@1.1-service.widevine \
-    android.hardware.drm@1.1-service.clearkey \
-    libwvdrmengine \
-    libwvhidl
+    android.hardware.keymaster@3.0-service
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
@@ -91,86 +79,6 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
     android.hardware.media.omx@1.0-service
 
-PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0 \
-    android.hardware.confirmationui@1.0 \
-    android.hardware.dumpstate@1.0 \
-    android.hardware.gatekeeper@1.0 \
-    android.hardware.health@1.0 \
-    android.hardware.health@2.0 \
-    android.hardware.nfc@1.0 \
-    android.hardware.nfc@1.1 \
-    android.hardware.thermal@1.0 \
-    android.hardware.thermal@1.1 \
-    android.hardware.usb.gadget@1.0 \
-    android.system.net.netd@1.0 \
-    android.system.net.netd@1.1 \
-    libaaudioservice \
-    libart-disassembler \
-    libbcc \
-    libbluetooth \
-    libbluetooth_jni \
-    libbluetooth-binder \
-    libbootanimation \
-    libbrotli \
-    libbz \
-    libcrypto \
-    libcrypto_utils \
-    libcups \
-    libdefcontainer_jni \
-    libdiskconfig \
-    libdisplayservicehidl \
-    libdumpstateaidl \
-    libdumpstateutil \
-    libdumputils \
-    libext2_blkid \
-    libext2_com_err \
-    libext2_e2p \
-    libext2_misc \
-    libext2_quota \
-    libext2_uuid \
-    libext2fs \
-    libext4_utils \
-    libf2fs_sparseblock \
-    libgtest_prod \
-    libhidcommand_jni \
-    libhidl-gen-hash \
-    libhidl-gen-utils \
-    libincident \
-    libjni_eglfence \
-    libjni_filtershow_filters \
-    libjni_jpegstream \
-    libjni_jpegutil \
-    libjni_latinime \
-    libjni_pacprocessor \
-    libjni_tinyplanet \
-    libkeystore-engine \
-    liblogcat \
-    liblshal \
-    libmediaextractorservice \
-    libmediaplayerservice \
-    libnetdaidl \
-    libnfc_nci_jni \
-    libnfc-nci \
-    libnl \
-    libpagemap \
-    libpcap \
-    libprintspooler_jni \
-    libprotoutil \
-    libprotobuf-cpp-full \
-    libqtaguid \
-    libresourcemanagerservice \
-    libsepol \
-    libservices \
-    libsoftkeymasterdevice \
-    libthermalcallback \
-    libthermalservice \
-    libtraced_shared \
-    libwfds \
-    # libwifikeystorehal \
-    # libwifi-system \
-    # libwifi-system-iface
-
 # Library used for VTS profiling (only for userdebug and eng builds)
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PACKAGES += \
@@ -180,9 +88,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.tests.msgq@1.0-impl
 endif
-
-DEVICE_FRAMEWORK_MANIFEST_FILE += \
-    system/libhidl/vintfdata/manifest_healthd_exclude.xml
 
 # Audio configuration
 USE_XML_AUDIO_POLICY_CONF := 1
