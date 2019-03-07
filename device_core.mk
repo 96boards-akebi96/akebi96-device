@@ -7,9 +7,6 @@ LOCAL_FSTAB_PATH ?= device/socionext/akebi96
 # # Select WiFi module
 BOARD_WLAN_DEVICE ?= rtl8822bu
 
-# default config is bsp-1.2
-BOARD_USE_BSP_VER ?= 1.2
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
 
