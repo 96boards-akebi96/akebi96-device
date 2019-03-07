@@ -40,15 +40,6 @@ typedef struct _name_info {
 	char name[32];	// ROM name
 } NAME_INFO;
 
-#ifdef USE_BSP_1_0
-NAME_INFO name_info[] = {
-	{ 0, 0x00000000, "/tmp/boot_b.img" },
-	{ 0, 0x00000080, "/tmp/boot_u.img" },
-	{ 1, 0x00000800, "/tmp/boot_st.img"},
-	{ 2, 0x00004000, "/tmp/bin_k.img"  },
-	{ 2, 0x0000A000, "/tmp/bin_u.img"  },
-};
-#else /* USE_BSP_1_0 */
 NAME_INFO name_info[] = {
 	{ 0, 0x00000000, "/tmp/boot_b.img" },
 	{ 0, 0x00000100, "/tmp/boot_u.img" },
@@ -56,7 +47,6 @@ NAME_INFO name_info[] = {
 	{ 2, 0x00004000, "/tmp/bin_k.img"  },
 	{ 2, 0x0000A000, "/tmp/bin_u.img"  },
 };
-#endif /* USE_BSP_1_0 */
 
 static int force_rw(char *name) {
 	int ret, fd;
