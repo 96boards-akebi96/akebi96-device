@@ -1,0 +1,8 @@
+# These settings are specific to running under the akebi96
+/dev/ttyS*                0660   system     system
+/proc                     0660   system     system
+/dev/ion                  0666   system     system
+/dev/mali0                0666   system     system
+/dev/vocd                 0660   system     system
+/dev/gpio_reg             0660   system     system
+/dev/rtkbt_dev            0660   bluetooth  bluetooth
