@@ -4,6 +4,9 @@ USE_CONFIG_DIR_NAME := p
 LOCAL_PATH_DEVICE := device/socionext/akebi96
 LOCAL_FSTAB_PATH ?= device/socionext/akebi96
 
+# Set vendor kernel path
+PRODUCT_VENDOR_KERNEL_HEADERS := ${BSP_TOP_DIR}/output/images/kernel-headers
+
 # # Select WiFi module
 BOARD_WLAN_DEVICE ?= rtl8822bu
 
