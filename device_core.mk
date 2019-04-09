@@ -89,7 +89,17 @@ PRODUCT_PACKAGES_KMOD := \
     ion-uniphier.ko \
     snd-soc-uniphier-aio2013.ko \
     uniphier-spdif_tx.ko \
-    vocdrv-ld20.ko
+    vocdrv-ld20.ko \
+    helene.ko \
+    sc1501a.ko \
+    uniphier-dvb.ko \
+    uniphier-ld20-mn884434-helene.ko
+
+PRODUCT_PACKAGES_FIRMWARE := \
+    hsc_ace_code.bin \
+    hsc_ace_data.bin \
+    hsc_spu_code.bin \
+    hsc_spu_data.bin
 
 PRODUCT_PACKAGES_HVSDK := \
     hvrst
@@ -109,6 +119,7 @@ PRODUCT_PACKAGES += $(PRODUCT_PACKAGES_VSOC_COMPONENTS)
 PRODUCT_PACKAGES += $(PRODUCT_PACKAGES_KMOD)
 PRODUCT_PACKAGES += $(PRODUCT_PACKAGES_HVSDK)
 PRODUCT_PACKAGES += $(PRODUCT_PACKAGES_OPENGL)
+PRODUCT_PACKAGES += $(PRODUCT_PACKAGES_FIRMWARE)
 
 # for Dummy Provisioning
 PRODUCT_PACKAGES += Provision

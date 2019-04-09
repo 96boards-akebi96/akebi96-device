@@ -119,3 +119,43 @@ include $(BUILD_SYSTEM)/base_rules.mk
 $(LOCAL_BUILT_MODULE): $(BSP_KMOD_DIR)/$(LOCAL_MODULE_RELATIVE_PATH)/$(LOCAL_MODULE) | $(ACP)
 	$(_kmod_strip)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/lib/modules
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := helene.ko
+LOCAL_MODULE_RELATIVE_PATH := kernel/drivers/media/dvb-frontends
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): $(BSP_KMOD_DIR)/$(LOCAL_MODULE_RELATIVE_PATH)/$(LOCAL_MODULE) | $(ACP)
+	$(_kmod_strip)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/lib/modules
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := sc1501a.ko
+LOCAL_MODULE_RELATIVE_PATH := kernel/drivers/media/dvb-frontends
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): $(BSP_KMOD_DIR)/$(LOCAL_MODULE_RELATIVE_PATH)/$(LOCAL_MODULE) | $(ACP)
+	$(_kmod_strip)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/lib/modules
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := uniphier-dvb.ko
+LOCAL_MODULE_RELATIVE_PATH := kernel/drivers/media/platform/uniphier
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): $(BSP_KMOD_DIR)/$(LOCAL_MODULE_RELATIVE_PATH)/$(LOCAL_MODULE) | $(ACP)
+	$(_kmod_strip)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/lib/modules
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := uniphier-ld20-mn884434-helene.ko
+LOCAL_MODULE_RELATIVE_PATH := kernel/drivers/media/platform/uniphier
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): $(BSP_KMOD_DIR)/$(LOCAL_MODULE_RELATIVE_PATH)/$(LOCAL_MODULE) | $(ACP)
+	$(_kmod_strip)
+
