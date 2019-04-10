@@ -24,23 +24,21 @@ $(call inherit-product-if-exists, $(LOCAL_PATH_DEVICE)/$(USE_CONFIG_DIR_NAME)/de
 $(call inherit-product-if-exists, $(LOCAL_PATH_DEVICE)/$(BOARD_WLAN_DEVICE)/device.mk)
 
 TARGET_PREBUILT_KERNEL := ${BSP_TOP_DIR}/output/images/Image.gz
-TARGET_PREBUILT_DTB := ${BSP_TOP_DIR}/output/images/for_android.dtb
+TARGET_PREBUILT_DTB := ${BSP_TOP_DIR}/output/images/akebi96.dtb
 
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):kernel \
-    $(TARGET_PREBUILT_DTB):for_android.dtb
+    $(TARGET_PREBUILT_DTB):akebi96.dtb
 
 LOCAL_BOOT2nd   := ${BSP_TOP_DIR}/output/images/unph_bl.bin
 LOCAL_BOOTUboot := ${BSP_TOP_DIR}/output/images/fip.bin
 LOCAL_KERNEL    := ${BSP_TOP_DIR}/output/images/Image.gz
-LOCAL_KERNEL_DTB:= ${BSP_TOP_DIR}/output/images/for_android.dtb
-LOCAL_ROOTFS    := ${BSP_TOP_DIR}/output/images/rootfs.cpio.uboot
+LOCAL_KERNEL_DTB:= ${BSP_TOP_DIR}/output/images/akebi96.dtb
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_BOOT2nd):boot_b.img \
     $(LOCAL_BOOTUboot):boot_u.img \
     $(LOCAL_KERNEL):bin_k.img \
-    $(LOCAL_ROOTFS):bin_r.img \
     $(LOCAL_KERNEL_DTB):bin_u.img
 
 PRODUCT_COPY_FILES += \
