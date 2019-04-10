@@ -17,9 +17,7 @@
 USE_CONFIG_DIR_NAME := p
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=320 \
-    persist.socionext.forteart=true \
-    persist.socionext.pictureplayer=true
+    ro.sf.lcd_density=320
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     vendor.mode=atv
