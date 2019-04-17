@@ -11,3 +11,4 @@ PRODUCT_CHARACTERISTICS := nosdcard,tablet
 
 PRODUCT_PACKAGES += Launcher3
 
+DEVICE_PACKAGE_OVERLAYS += device/socionext/akebi96/$(USE_CONFIG_DIR_NAME)/overlay

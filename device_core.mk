@@ -122,8 +122,6 @@ PRODUCT_PACKAGES += $(PRODUCT_PACKAGES_FIRMWARE)
 # for Dummy Provisioning
 PRODUCT_PACKAGES += Provision
 
-DEVICE_PACKAGE_OVERLAYS += device/socionext/akebi96/$(USE_CONFIG_DIR_NAME)/overlay
-
 # for CTS
 # https://code.google.com/p/android/issues/detail?id=63796
 PRODUCT_AAPT_CONFIG += large
