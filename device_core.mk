@@ -83,7 +83,6 @@ PRODUCT_PACKAGES_KMOD := \
     snd-usbmidi-lib.ko \
     dwc3.ko \
     dwc3-uniphier.ko \
-    ave.ko \
     ion-uniphier.ko \
     snd-soc-uniphier-aio2013.ko \
     uniphier-spdif_tx.ko \

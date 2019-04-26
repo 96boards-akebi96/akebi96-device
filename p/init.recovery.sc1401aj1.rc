@@ -13,7 +13,6 @@ on init
     insmod /vendor/lib/modules/extra/vocdrv-ld20.ko
     insmod /vendor/lib/modules/kernel/drivers/usb/dwc3/dwc3.ko
     insmod /vendor/lib/modules/kernel/drivers/usb/dwc3/dwc3-uniphier.ko
-    insmod /vendor/lib/modules/kernel/drivers/net/ethernet/socionext/ave/ave.ko
 
 # interval:60s margin:20s
 service watchdogd /sbin/watchdogd 60 20
