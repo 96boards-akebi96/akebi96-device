@@ -1,5 +1,5 @@
 type sysfs_ksm, fs_type, sysfs_type;
 type sysfs_gpio_export, fs_type, sysfs_type;
-type sysfs_gpio444, fs_type, sysfs_type;
+type sysfs_gpio375, fs_type, sysfs_type;
 type sysfs_usb_device, fs_type, sysfs_type;
 type proc_slabinfo, fs_type, proc_type;
