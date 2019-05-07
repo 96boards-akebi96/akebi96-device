@@ -101,7 +101,6 @@ on post-fs
     insmod /vendor/lib/modules/kernel/drivers/media/platform/uniphier/uniphier-ld20-mn884434-helene.ko
 
 on boot
-    insmod /vendor/lib/modules/kernel/drivers/net/ethernet/socionext/ave/ave.ko
     insmod /vendor/lib/modules/kernel/sound/core/snd-hwdep.ko
     insmod /vendor/lib/modules/kernel/sound/usb/snd-usbmidi-lib.ko
     insmod /vendor/lib/modules/kernel/sound/usb/snd-usb-audio.ko
