@@ -37,6 +37,7 @@ USE_OPENGL_RENDERER := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 2
 TARGET_DISABLE_TRIPLE_BUFFERING := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 0
+TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 # PDK does not use ext4 image, but it is added here to prevent build break.
 BOARD_BOOTIMAGE_PARTITION_SIZE := $(shell device/socionext/akebi96/partinfo.sh boot size)
