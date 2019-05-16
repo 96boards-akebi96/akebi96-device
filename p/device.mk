@@ -13,6 +13,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH_DEVICE)/$(USE_CONFIG_DIR_NAME)/init.sc1401aj1.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sc1401aj1.rc \
+    $(LOCAL_PATH_DEVICE)/$(USE_CONFIG_DIR_NAME)/init.sc1401aj1.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sc1401aj1.usb.rc \
     $(LOCAL_FSTAB_PATH)/$(USE_CONFIG_DIR_NAME)/fstab.sc1401aj1:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.sc1401aj1 \
     $(call add-to-product-copy-files-if-exists,$(LOCAL_FSTAB_PATH)/$(USE_CONFIG_DIR_NAME)/fstab_boot.sc1401aj1:$(TARGET_COPY_OUT_VENDOR)/etc/fstab_boot.sc1401aj1)
 
