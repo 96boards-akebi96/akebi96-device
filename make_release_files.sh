@@ -6,7 +6,7 @@ TARGET_DIR=proprietary
 TO_EXTRACT_MULTI_LIB=(
 	"libomxprox.sc1401aj1.so \$(LOCAL_PATH)/include/OpenMAX/libomxil-prox/include"
 	"libsc.sc1401aj1.so \$(LOCAL_PATH)/include/libvideo-out/sc \$(LOCAL_PATH)/include/libvideo-out/sc/include \$(LOCAL_PATH)/include/libvideo-out/sc/include/reg"
-	"libvideo-out.so \$(LOCAL_PATH)/include/libvideo-out/voc_vout/include"
+	"libvideo-out.sc1401aj1.so \$(LOCAL_PATH)/include/libvideo-out/voc_vout/include"
 )
 
 # --------------------------------------

@@ -74,7 +74,7 @@ PRODUCT_PACKAGES_VSOC_OPENMAX := \
     libomxprox.sc1401aj1
 
 PRODUCT_PACKAGES_VSOC_COMPONENTS := \
-    libvideo-out \
+    libvideo-out.sc1401aj1 \
     libsc.sc1401aj1
 
 PRODUCT_PACKAGES_KMOD := \
