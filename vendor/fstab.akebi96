@@ -1,0 +1,10 @@
+# Android fstab file.
+#<src>                                                  <mnt_point>         <type>    <mnt_flags and options>                               <fs_mgr_flags>
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+/dev/block/zram0 none swap defaults zramsize=26214400
+
+/dev/block/platform/soc@0/5a000000.sdhc/by-name/boot        /boot               vfat      defaults                                                             wait
+/dev/block/platform/soc@0/5a000000.sdhc/by-name/userdata    /data               ext4      discard,noauto_da_alloc,data=ordered,user_xattr,discard,barrier=1    wait
+/devices/platform/soc@0/65a00000.usb/xhci-hcd.0.auto/usb*   auto                auto      defaults                                                             voldmanaged=usb1:auto,encryptable=userdata

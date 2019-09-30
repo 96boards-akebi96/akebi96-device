@@ -1,0 +1,23 @@
+import init.${ro.hardware}.usb.rc
+
+on early-init
+   exec u:r:modprobe:s0 -- /vendor/bin/modprobe -a -d \
+       /vendor/lib/modules 8822bu.ko rtk_btusb.ko mali_kbase.ko vocdrv-ld20.ko
+
+on init
+    mount debugfs /sys/kernel/debug /sys/kernel/debug
+    chmod 711 /sys/kernel/debug
+
+on fs
+    export OMX_BELLAGIO_REGISTRY /vendor/etc/omxregister
+    mount_all /vendor/etc/fstab.${ro.hardware}
+    swapon_all /vendor/etc/fstab.${ro.hardware}
+
+on boot
+    setprop service.adb.tcp.port 5555
+
+service DisplayManager /vendor/bin/display_manager
+    class core
+    user system
+    group graphics
+    writepid /dev/cpuset/system-background/tasks

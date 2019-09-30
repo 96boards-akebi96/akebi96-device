@@ -1,0 +1,10 @@
+
+on post-fs-data
+    mkdir /data/vendor/tee 0775 shell shell
+    mkdir /data/vendor/tee/optee_armtz 0775 shell shell
+    restorecon_recursive /data/vendor/tee
+
+service tee-supplicant /vendor/bin/tee-supplicant
+    class main
+    user  root
+    oneshot

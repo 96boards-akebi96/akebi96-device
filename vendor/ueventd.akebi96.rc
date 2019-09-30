@@ -1,0 +1,13 @@
+
+# device nodes for HAl bt
+/dev/rtkbt_dev                   0666  bluetooth  bluetooth
+# device nodes for HAl drm
+/dev/tee0                        0666  shell      shell
+/dev/teepriv0                    0666  shell      shell
+# device nodes for HAl graphics
+/dev/mali*                       0666  system     graphics
+/dev/graphics/fb*                0666  system     graphics
+/dev/ion                         0666  system     graphics
+# device nodes for SNI drivers
+/dev/vocd                        0660  system     system
+/dev/rtkbt_dev                   0660  bluetooth  bluetooth

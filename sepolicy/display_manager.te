@@ -1,0 +1,9 @@
+type display_manager, domain;
+type display_manager_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(display_manager)
+vndbinder_use(display_manager)
+
+allow display_manager vocd_device:chr_file rw_file_perms;
+allow display_manager display_manager_service:service_manager { add find };
+allow display_manager hal_graphics_allocator_default:fd use;

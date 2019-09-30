@@ -1,0 +1,3 @@
+vndbinder_use(hal_audio_default);
+allow hal_audio_default vndbinder_device:chr_file { read write ioctl open };
+allow hal_audio_default vndservicemanager:binder { call };
