@@ -1,0 +1,9 @@
+#============= init ==============
+allow init kernel:system module_request;
+# allow init proc:file setattr;
+allow init ram_device:blk_file w_file_perms;
+allow init tmpfs:lnk_file create;
+
+allow init nativetest_data_file:dir { open read getattr search };
+allow init nativetest_data_file:file getattr;
+

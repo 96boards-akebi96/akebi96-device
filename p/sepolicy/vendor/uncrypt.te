@@ -1,0 +1,2 @@
+#============= uncrypt ==============
+#allow uncrypt block_device:blk_file w_file_perms;

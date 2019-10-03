@@ -1,0 +1,4 @@
+type bsp_block_device, dev_type;
+type usb_block_device, dev_type;
+type vocd_device, dev_type;
+type rtk_bt_device, dev_type;
