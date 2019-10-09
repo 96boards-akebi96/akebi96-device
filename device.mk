@@ -169,6 +169,14 @@ DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
 PRODUCT_PACKAGES += vndk_package
 
 #
+# OpenGL Middlwares
+#
+PRODUCT_PACKAGES += \
+	libGLES_mali \
+	egl.cfg \
+	gralloc.akebi96
+
+#
 # Socionext Middlwares
 #
 PRODUCT_PACKAGES += \
@@ -176,7 +184,6 @@ PRODUCT_PACKAGES += \
 	libDisplayManagerClient \
 	libOmxDisplayManager \
 	libOmxDisplayController \
-	gralloc.akebi96 \
 	hwcomposer.akebi96 \
 	libomxil-bellagio \
 	libomxprox.akebi96 \
