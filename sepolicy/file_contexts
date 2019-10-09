@@ -48,8 +48,8 @@
 /(vendor|system/vendor)/bin/display_init	u:object_r:display_manager_exec:s0
 /(vendor|system/vendor)/bin/hvrst		u:object_r:hvrst_exec:s0
 
-/(vendor|system/vendor)/lib(64)?/libomxprox\.akebi96\.so	u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/libomxprox\.sc1401aj1\.so	u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libomxil-bellagio\.so		u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libvoc\.so			u:object_r:same_process_hal_file:s0
-/(vendor|system/vendor)/lib(64)?/libsc\.akebi96\.so		u:object_r:same_process_hal_file:s0
-/(vendor|system/vendor)/lib(64)?/libvideo-out\.so		u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/libsc\.sc1401aj1\.so		u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/libvideo-out\.sc1401aj1\.so		u:object_r:same_process_hal_file:s0
