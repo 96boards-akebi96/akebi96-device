@@ -184,11 +184,11 @@ PRODUCT_PACKAGES += \
 	libDisplayManagerClient \
 	libOmxDisplayManager \
 	libOmxDisplayController \
-	hwcomposer.akebi96 \
+	hwcomposer.sc1401aj1 \
 	libomxil-bellagio \
-	libomxprox.akebi96 \
-	libvideo-out \
-	libsc.akebi96 \
+	libomxprox.sc1401aj1 \
+	libvideo-out.sc1401aj1 \
+	libsc.sc1401aj1 \
 	hvrst
 
 BOARD_VENDOR_KERNEL_MODULES += \
