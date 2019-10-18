@@ -89,7 +89,7 @@ on post-fs
     insmod /vendor/lib/modules/extra/ion-uniphier.ko
 
     insmod /vendor/lib/modules/extra/vocdrv-ld20.ko
-    insmod /vendor/lib/modules/kernel/drivers/gpu/arm/midgard/mali_kbase.ko 
+    insmod /vendor/lib/modules/extra/mali_kbase.ko
 
     insmod /vendor/lib/modules/extra/snd-soc-uniphier-aio2013.ko
     insmod /vendor/lib/modules/extra/uniphier-spdif_tx.ko
