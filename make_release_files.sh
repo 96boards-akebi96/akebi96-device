@@ -5,12 +5,12 @@
 
 VENDOR=socionext
 TARGET_DIR=proprietary/${VENDOR}
-TARGET_BOOTLOADER_BOARD_NAME=sc1401aj1
+TARGET_BOARD_NAME=sc1401aj1
 
 TO_EXTRACT_MULTI_LIB=(
-	"libomxprox.\${TARGET_BOOTLOADER_BOARD_NAME}.so OpenMAX/libomxil-prox/include"
-	"libsc.\${TARGET_BOOTLOADER_BOARD_NAME}.so"
-	"libvideo-out.\${TARGET_BOOTLOADER_BOARD_NAME}.so"
+	"libomxprox.\${TARGET_BOARD_NAME}.so OpenMAX/libomxil-prox/include"
+	"libsc.\${TARGET_BOARD_NAME}.so"
+	"libvideo-out.\${TARGET_BOARD_NAME}.so"
 )
 
 # --------------------------------------
@@ -29,8 +29,8 @@ Extract_files() {
 		cp -a ${OUT}/vendor/lib/${FILE_NAME}   ${TARGET_DIR}/lib
 		cp -a ${OUT}/vendor/lib64/${FILE_NAME} ${TARGET_DIR}/lib64
 		if [ x"${TARGET_BOARD}" != x"akebi96" ]; then
-			ln -sf ${FILE_NAME} ${TARGET_DIR}/lib/${FILE_NAME/${TARGET_BOOTLOADER_BOARD_NAME}/akebi96}
-			ln -sf ${FILE_NAME} ${TARGET_DIR}/lib64/${FILE_NAME/${TARGET_BOOTLOADER_BOARD_NAME}/akebi96}
+			ln -sf ${FILE_NAME} ${TARGET_DIR}/lib/${FILE_NAME/${TARGET_BOARD_NAME}/akebi96}
+			ln -sf ${FILE_NAME} ${TARGET_DIR}/lib64/${FILE_NAME/${TARGET_BOARD_NAME}/akebi96}
 		fi
 	done
 }
@@ -85,7 +85,7 @@ copy_vendor_header_file() {
 			      --include='*.h' \
 			      --include='*/' \
 			      --exclude='*' \
-			      ${ANDROID_BUILD_TOP}/vendor/${VENDOR}/${TARGET_BOOTLOADER_BOARD_NAME}/${EXPORT_INCLUDE_NAME}/* \
+			      ${ANDROID_BUILD_TOP}/vendor/${VENDOR}/${TARGET_BOARD_NAME}/${EXPORT_INCLUDE_NAME}/* \
 			      ${TARGET_DIR}/include/${EXPORT_INCLUDE_NAME}
 		fi
 	done

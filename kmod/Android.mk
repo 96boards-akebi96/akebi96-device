@@ -154,7 +154,7 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/lib/modules
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := mali_kbase.ko
-LOCAL_MODULE_RELATIVE_PATH := kernel/drivers/gpu/arm/midgard
+LOCAL_MODULE_RELATIVE_PATH := extra
 include $(BUILD_SYSTEM)/base_rules.mk
 $(LOCAL_BUILT_MODULE): $(BSP_KMOD_DIR)/$(LOCAL_MODULE_RELATIVE_PATH)/$(LOCAL_MODULE) | $(ACP)
 	$(_kmod_strip)
