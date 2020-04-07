@@ -5,7 +5,7 @@ OPTEE_TA_TARGETS ?= ta_arm64
 OPTEE_OS_DIR ?= external/optee_os
 
 # Use local cross compiler for OP-TEE OS
-OPTEE_EXTRA_FLAGS ?= CROSS_COMPILE_ta_arm64=$(CROSS_COMPILE64) CROSS_COMPILE_ta_arm32=$(CROSS_COMPILE32) CROSS_COMPILE64=aarch64-linux-gnu- CROSS_COMPILE32=arm32-linux-guneabihf-
+OPTEE_EXTRA_FLAGS ?= CROSS_COMPILE64=aarch64-linux-gnu- CROSS_COMPILE32=arm32-linux-guneabihf-
 
 CFG_SECSTOR_TA_MGMT_PTA := y
 CFG_TEE_CORE_LOG_LEVEL := 4
@@ -24,6 +24,8 @@ PRODUCT_PACKAGES += libteec \
 PRODUCT_PACKAGES += xtest
 # os_test
 PRODUCT_PACKAGES += 5b9e0e40-2636-11e1-ad9e-0002a5d5c51b.ta
+# os_test_lib
+PRODUCT_PACKAGES += ffd2bded-ab7d-4988-95ee-e4962fff7154.ta
 # concurrent_large
 PRODUCT_PACKAGES += 5ce0c432-0ab0-40e5-a056-782ca0e6aba2.ta
 # sha_perf
