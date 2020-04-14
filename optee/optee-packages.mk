@@ -52,6 +52,12 @@ PRODUCT_PACKAGES += f157cda0-550c-11e5-a6fa-0002a5d5c51b.ta
 PRODUCT_PACKAGES += 873bcd08-c2c3-11e6-a937-d0bf9c45c61c.ta
 # sdp-basic - atm default disabled for hikey
 PRODUCT_PACKAGES += 12345678-5b69-11e4-9dbb-101f74f00099.ta
+# ta-miss test
+PRODUCT_PACKAGES += 528938ce-fc59-11e8-8eb2-f2801f1b9fd1.ta
+# sims-keepalive
+PRODUCT_PACKAGES += a4c04d50-f180-11e8-8eb2-f2801f1b9fd1.ta
+# dlopen/dlsym/dlclose
+PRODUCT_PACKAGES += b3091a65-9751-4784-abf7-0298a7cc35ba.ta
 
 # optee examples
 PRODUCT_PACKAGES += optee_example_helloworld
