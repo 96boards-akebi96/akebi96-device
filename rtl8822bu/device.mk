@@ -20,7 +20,7 @@ PRODUCT_COPY_FILES += \
     $(call add-to-product-copy-files-if-exists,${BSP_KMOD_DIR}/kernel/crypto/ctr.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/kernel/crypto/ctr.ko) \
     $(call add-to-product-copy-files-if-exists,${BSP_KMOD_DIR}/extra/rtk_btusb_core.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/extra/rtk_btusb_core.ko)
 
-$(call inherit-product-if-exists, hardware/realtek/bt/rtkbt/rtkbt.mk)
+$(call inherit-product-if-exists, $(LOCAL_PATH)/bt/rtkbt/rtkbt.mk)
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
